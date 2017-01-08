@@ -1,13 +1,7 @@
 require_relative 'lib/prime.rb'
 require_relative 'lib/multiplication_table'
 require 'terminal-table'
-# require 'optparse'
-#
-# options = { size: 10 }
-#
-# OptionParser.new do |options|
-#   options.banner = 'Usage: runner.rb [-s]'
-# end
+
 def int_check(string)
   /\A[-+]?\d+\z/ === string
 end
