@@ -2,7 +2,7 @@ require_relative 'prime.rb'
 require_relative 'multiplication_table.rb'
 require 'terminal-table'
 
-# Output Class to properly handle output
+# Interface Class to properly handle output
 class Interface
   def self.help
     puts 'Welcome to the Primes Multiplication Table Help Menu!'
