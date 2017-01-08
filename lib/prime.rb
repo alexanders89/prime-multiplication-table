@@ -16,10 +16,9 @@ class Prime
   # Return an array of the first "n" prime numbers
   def self.first(num = 10)
     primes = []
-
     i = 2
-    until primes.length == num
 
+    until primes.length == num
       primes << i if Prime.valid?(i)
       i += 1
     end
