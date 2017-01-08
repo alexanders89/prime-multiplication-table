@@ -23,7 +23,3 @@ class MultiplicationTable
     start
   end
 end
-
-ten = [2, 3, 5]
-
-p MultiplicationTable.new([1, 2, 3], [4, 5, 6]).table
