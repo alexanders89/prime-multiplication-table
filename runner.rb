@@ -1,5 +1,6 @@
 require_relative 'lib/prime.rb'
 require_relative 'lib/multiplication_table'
+require 'terminal-table'
 # require 'optparse'
 #
 # options = { size: 10 }
@@ -19,12 +20,14 @@ if ARGV.any?
   elsif ARGV[0] == 'size' || ARGV[0] == '-s'
     if int_check(ARGV[1])
       primes = Prime.first(ARGV[1].to_i)
-      puts MultiplicationTable.new(primes, primes).to_s
+      table = Terminal::Table.new rows: MultiplicationTable.new(primes, primes).table
+      puts table
     else
       puts ARGV[1] + ' is not a number'
       puts 'Please enter a valid number'
     end
   end
 else
-  puts MultiplicationTable.new(Prime.first, Prime.first).to_s
+  table = Terminal::Table.new rows: MultiplicationTable.new(Prime.first, Prime.first).table
+  puts table
 end
