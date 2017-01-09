@@ -27,6 +27,12 @@ $ git clone https://github.com/coleby210/prime-multiplication-table.git
 # Checking connectivity... done.
 ```
 
+Next we need to jump into the folder we just cloned:
+
+```bash
+$ cd prime-multiplication-table
+```
+
 Now we need to install all of the dependencies:
 
 ```bash
@@ -40,7 +46,7 @@ Woo! The programs installed!
 
 ## Usage
 
-First we need to jump into our program folder using the Terminal. So this depends on where you installed the program, if you followed my installation this will work:
+First we need to jump into our program folder using the Terminal. So this depends on where you installed the program, if you followed my installation this will work: Note: If you just finished installing dependencies, you can skip this step as you're already in the folder.
 
 ```bash
 $ cd ~/Desktop/prime-multiplication-table
@@ -67,7 +73,7 @@ $ ruby runner.rb
 # +----+----+----+-----+-----+-----+-----+-----+-----+-----+-----+
 ```
 
-To set the size of the table to use a custom number, use -s:
+To set the amount of primes to use a custom number, use -s:
 
 ```bash
 $ ruby runner.rb -s 3
